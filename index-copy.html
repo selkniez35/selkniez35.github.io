@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Samy EL KNIEZ - Développeur Symfony</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
         body {
-            background: #020617;
+            background: #020617; /* plus profond */
             color: #e2e8f0;
-            font-family: system-ui, sans-serif;
         }
 
         .hero {
-            padding: 120px 20px;
-            text-align: center;
             background: linear-gradient(135deg, #020617, #1e293b);
         }
 
@@ -41,39 +40,18 @@
         .card {
             background: #1e293b;
             border: 1px solid #334155;
-            border-radius: 14px;
+            border-radius: 12px;
             transition: 0.3s;
-            color: #e2e8f0;
         }
 
         .card:hover {
-            transform: translateY(-6px);
+            transform: translateY(-5px);
             border-color: #38bdf8;
-            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.12);
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
         }
 
         section {
-            margin-bottom: 90px;
-        }
-
-        .section-title {
-            text-align: center;
             margin-bottom: 40px;
-            font-weight: 700;
-        }
-
-        footer {
-            background: #0f172a;
-            color: #94a3b8;
-        }
-
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -82,59 +60,44 @@
 
 <!-- NAV -->
 <nav class="navbar navbar-dark bg-black px-4 sticky-top">
-    <span class="navbar-brand fw-bold">Samy EL KNIEZ</span>
+    <span class="navbar-brand fw-bold">Mon portfolio</span>
     <a href="#contact" class="btn btn-outline-info btn-sm">Contact</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
     <h1 class="fw-bold">Développeur <span class="highlight">Full Stack - Symfony</span></h1>
+    <p class="lead mt-3">Du code propre, des performances solides… et des nuits de sommeil préservées.</p>
 
-    <p class="lead mt-3">
-        Du code propre, des performances solides… et des nuits de sommeil préservées.
-    </p>
-
-    <p class="text-secondary">
-        Sites web • APIs • Outils métiers sur mesure
-    </p>
-
-    <div class="mt-4">
-        <a href="#projects" class="btn btn-info btn-lg me-2">
-            <i class="bi bi-code-slash"></i> Voir mes projets
-        </a>
-
-        <a href="#contact" class="btn btn-outline-info btn-lg">
-            Me contacter
-        </a>
-    </div>
+    <a href="#projects" class="btn btn-info btn-lg mt-4">
+        <i class="bi bi-code-slash"></i> Voir mes projets
+    </a>
 </section>
 
 <!-- ABOUT -->
-<section class="container">
-    <h2 class="section-title">À propos</h2>
+<section class="container py-5">
+    <h2 class="text-center mb-4">À propos</h2>
 
     <div class="card p-4 text-center">
         <p class="mb-0">
-            Développeur web spécialisé en Symfony, j’accompagne entreprises et particuliers dans la création de solutions digitales sur mesure :
-            sites web, API et outils métiers.
-            <br><br>
-            Mon objectif est de livrer des applications fiables, performantes et adaptées aux besoins réels des utilisateurs.
+            Développeur web spécialisé en Symfony, j’accompagne entreprises et particuliers dans la réalisation de solutions digitales sur mesure (sites web, API, outils métiers),
+            avec une approche axée sur la performance, la fiabilité et l’expérience utilisateur.
         </p>
     </div>
 </section>
 
 <!-- SKILLS -->
-<section class="container">
-    <h2 class="section-title">Compétences</h2>
+<section class="container py-5">
+    <h2 class="text-center mb-4">Compétences</h2>
 
     <div class="row text-center g-3">
 
         <div class="col-md-3">
-            <div class="card p-3">Symfony</div>
+            <div class="card p-3">Développement web</div>
         </div>
 
         <div class="col-md-3">
-            <div class="card p-3">PHP</div>
+            <div class="card p-3">Symfony</div>
         </div>
 
         <div class="col-md-3">
@@ -149,15 +112,15 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="container">
-    <h2 class="section-title">Projets</h2>
+<section id="projects" class="container py-5">
+    <h2 class="text-center mb-4">Projets</h2>
 
     <div class="row g-4">
 
         <div class="col-md-4">
             <div class="card p-4 h-100">
                 <h5>Mini CRM Symfony</h5>
-                <p>Gestion clients, devis et suivi commercial.</p>
+                <p>Gestion clients, devis et suivi.</p>
                 <span class="badge bg-info text-dark">Symfony</span>
             </div>
         </div>
@@ -165,7 +128,7 @@
         <div class="col-md-4">
             <div class="card p-4 h-100">
                 <h5>API Produits</h5>
-                <p>API REST sécurisée avec authentification JWT.</p>
+                <p>API REST sécurisée avec authentification.</p>
                 <span class="badge bg-info text-dark">API</span>
             </div>
         </div>
@@ -182,39 +145,32 @@
 </section>
 
 <!-- CTA -->
-<section class="text-center">
-    <h3 class="fw-bold">Un projet en tête ?</h3>
-    <p class="text-secondary">Je suis disponible pour des missions freelance.</p>
+<section class="text-center py-5">
+    <h3>Un projet ?</h3>
+    <p>Je suis disponible pour des missions freelance.</p>
 
-    <a href="mailto:samy.elkniez@gmail.com" class="btn btn-info btn-lg mt-3">
+    <a href="mailto:samy.elkniez@gmail.com" class="btn btn-info btn-lg">
         Me contacter
     </a>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="container">
-    <h2 class="section-title">Contact</h2>
+<section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact</h2>
 
     <div class="card p-4 text-center">
         <p>Email : <strong>samy.elkniez@gmail.com</strong></p>
-
-        <p>
-            LinkedIn :
-            <a href="https://www.linkedin.com/in/samy-el-kniez-3a7430176/" target="_blank">
-                Mon profil
-            </a>
-        </p>
-
-        <p class="text-secondary mt-3">
-            Disponible pour missions freelance ou collaboration.
-        </p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/samy-el-kniez-3a7430176/">Cliquez ici</a> ☀️</p>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="text-center py-4 mt-5">
-    <small>© 2026 Samy EL KNIEZ - Développeur Symfony / PHP Freelance</small>
+    <small>© 2026 Samy EL KNIEZ - Développeur Full Stack - Symfony Freelance</small>
 </footer>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
