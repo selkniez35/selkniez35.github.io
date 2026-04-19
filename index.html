@@ -1,66 +1,200 @@
-<!-- MISSIONS (TJM STYLE) -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samy EL KNIEZ - Développeur Symfony</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0b1220;
+            color: #e5e7eb;
+        }
+
+        .hero {
+            background: radial-gradient(circle at top, #1e293b, #0b1220);
+            padding: 110px 20px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #38bdf8;
+        }
+
+        .card {
+            background: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 14px;
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #38bdf8;
+        }
+
+        .section-title {
+            margin: 60px 0 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .img-cover {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .btn-info {
+            background: #38bdf8;
+            border: none;
+            color: #0b1220;
+            font-weight: 600;
+        }
+
+        .btn-info:hover {
+            background: #0ea5e9;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-dark bg-black px-4 sticky-top">
+    <span class="navbar-brand fw-bold">Samy EL KNIEZ</span>
+    <a href="#contact" class="btn btn-outline-info btn-sm">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1 class="fw-bold">Développeur <span class="highlight">Symfony / Full Stack</span></h1>
+    <p class="lead mt-3">Je crée des applications web modernes, rapides et scalables.</p>
+
+    <a href="#projects" class="btn btn-info btn-lg mt-4">
+        <i class="bi bi-code-slash"></i> Voir mes livrables
+    </a>
+</section>
+
+<!-- ABOUT -->
+<section class="container">
+    <h2 class="section-title">À propos</h2>
+
+    <div class="card p-4 text-center">
+        <p class="mb-0">
+            Développeur Symfony spécialisé en création d’applications métier, API REST et plateformes web sur mesure pour entreprises et indépendants.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="container">
+    <h2 class="section-title">Compétences</h2>
+
+    <div class="row text-center g-3">
+
+        <div class="col-md-3">
+            <div class="card p-3">Symfony</div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-3">PHP</div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-3">API REST</div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card p-3">MySQL</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS / LIVRABLES -->
 <section id="projects" class="container">
-    <h2 class="section-title">Missions & Expériences</h2>
+    <h2 class="section-title">Livrables (Projets réalisés)</h2>
 
     <div class="row g-4">
 
-        <!-- Mission 1 -->
+        <!-- CRM -->
         <div class="col-md-4">
             <div class="card h-100">
-                <img class="img-cover" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c"  alt=""/>
+                <img class="img-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71"  alt=""/>
                 <div class="p-3">
-                    <h5>Développement d’un CRM sur mesure</h5>
-                    <p>
-                        Conception et développement d’une application métier pour la gestion de clients,
-                        devis et facturation.
-                    </p>
-                    <ul class="small text-secondary">
-                        <li>Symfony / PHP</li>
-                        <li>Architecture MVC</li>
-                        <li>Base MySQL optimisée</li>
-                    </ul>
-                    <span class="badge bg-info text-dark">Mission backend</span>
+                    <h5>CRM Symfony</h5>
+                    <p>Gestion clients, devis, factures et suivi commercial.</p>
+                    <span class="badge bg-info text-dark">Produit SaaS</span>
                 </div>
             </div>
         </div>
 
-        <!-- Mission 2 -->
+        <!-- API -->
         <div class="col-md-4">
             <div class="card h-100">
                 <img class="img-cover" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"  alt=""/>
                 <div class="p-3">
-                    <h5>API REST pour plateforme e-commerce</h5>
-                    <p>
-                        Développement d’une API sécurisée pour gestion produits, commandes et utilisateurs.
-                    </p>
-                    <ul class="small text-secondary">
-                        <li>Symfony API Platform</li>
-                        <li>JWT Authentication</li>
-                        <li>Documentation API</li>
-                    </ul>
-                    <span class="badge bg-info text-dark">Mission API</span>
+                    <h5>API E-commerce</h5>
+                    <p>API REST sécurisée pour gestion produits et commandes.</p>
+                    <span class="badge bg-info text-dark">Backend API</span>
                 </div>
             </div>
         </div>
 
-        <!-- Mission 3 -->
+        <!-- SITE -->
         <div class="col-md-4">
             <div class="card h-100">
                 <img class="img-cover" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d"  alt=""/>
                 <div class="p-3">
-                    <h5>Site vitrine & optimisation SEO</h5>
-                    <p>
-                        Création de sites vitrines performants avec optimisation SEO et responsive design.
-                    </p>
-                    <ul class="small text-secondary">
-                        <li>Bootstrap / Symfony Twig</li>
-                        <li>SEO technique</li>
-                        <li>Performance Web</li>
-                    </ul>
-                    <span class="badge bg-info text-dark">Mission frontend</span>
+                    <h5>Site vitrine pro</h5>
+                    <p>Sites modernes pour entreprises et indépendants.</p>
+                    <span class="badge bg-info text-dark">Frontend</span>
                 </div>
             </div>
         </div>
 
     </div>
 </section>
+
+<!-- CTA -->
+<section class="text-center py-5">
+    <h3>Tu as un projet ?</h3>
+    <p>Je développe ton application web sur mesure.</p>
+
+    <a href="mailto:samy.elkniez@gmail.com" class="btn btn-info btn-lg">
+        Me contacter
+    </a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container py-5">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card p-4 text-center">
+        <p>Email : <strong>samy.elkniez@gmail.com</strong></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/samy-el-kniez-3a7430176/">Profil</a></p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 mt-5">
+    <small>© 2026 Samy EL KNIEZ - Développeur Symfony Freelance</small>
+</footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
