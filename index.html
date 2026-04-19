@@ -2,108 +2,69 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Samy Charles - Développeur Symfony PHP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Samy Charles - Développeur Symfony</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            background: #111827;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        .subtitle {
-            color: #38bdf8;
-            margin-top: 10px;
-        }
-
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: #38bdf8;
-            color: #000;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-    </style>
+    <!-- Bootstrap LOCAL -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-dark text-light">
 
-<header>
-    <h1>Samy Charles</h1>
-    <div class="subtitle">Développeur Symfony / PHP Freelance</div>
-    <p>Je crée des applications web simples, rapides et efficaces.</p>
-    <a class="btn" href="mailto:tonemail@gmail.com">Me contacter</a>
-</header>
+<nav class="navbar navbar-dark bg-black px-4">
+    <span class="navbar-brand">Samy Charles</span>
+    <a href="#contact" class="btn btn-outline-info btn-sm">Contact</a>
+</nav>
 
-<section>
-
-    <h2>À propos</h2>
-    <div class="card">
-        <p>
-            Développeur web spécialisé en Symfony et PHP, je me lance en freelance
-            pour accompagner les indépendants et petites entreprises dans la création
-            de leurs sites et applications web.
-        </p>
-    </div>
-
-    <h2>Projets</h2>
-
-    <div class="card">
-        <h3>Mini CRM Symfony</h3>
-        <p>Gestion de clients et devis avec Symfony.</p>
-    </div>
-
-    <div class="card">
-        <h3>API Gestion Produits</h3>
-        <p>API REST avec Symfony + MySQL.</p>
-    </div>
-
-    <div class="card">
-        <h3>Site vitrine</h3>
-        <p>Site simple pour petites entreprises.</p>
-    </div>
-
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email : tonemail@gmail.com</p>
-        <p>LinkedIn : <a href="#">lien</a></p>
-    </div>
-
+<section class="text-center py-5 border-bottom border-secondary">
+    <h1 class="fw-bold">Développeur Symfony / PHP</h1>
+    <p class="text-info">Freelance - Création d'applications web modernes</p>
+    <a href="#projects" class="btn btn-info mt-3">Voir mes projets</a>
 </section>
+
+<section class="container py-5">
+    <h2 class="mb-4 text-center">À propos</h2>
+
+    <div class="card bg-secondary text-light p-4 border-0">
+        Développeur web spécialisé en Symfony et PHP.
+    </div>
+</section>
+
+<section class="container py-5">
+    <h2 class="mb-4 text-center">Compétences</h2>
+
+    <div class="row text-center g-3">
+        <div class="col-md-3"><div class="p-3 bg-secondary rounded">Symfony</div></div>
+        <div class="col-md-3"><div class="p-3 bg-secondary rounded">PHP</div></div>
+        <div class="col-md-3"><div class="p-3 bg-secondary rounded">API REST</div></div>
+        <div class="col-md-3"><div class="p-3 bg-secondary rounded">MySQL</div></div>
+    </div>
+</section>
+
+<section id="projects" class="container py-5">
+    <h2 class="mb-4 text-center">Projets</h2>
+
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card bg-secondary p-3 border-0">
+                <h5>Mini CRM</h5>
+                <p>Symfony</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container py-5 text-center">
+    <h2>Contact</h2>
+    <p>Email : tonemail@gmail.com</p>
+</section>
+
+<footer class="text-center py-4 border-top border-secondary">
+    © 2026 Samy Charles
+</footer>
+
+<!-- JS Bootstrap -->
+<script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
