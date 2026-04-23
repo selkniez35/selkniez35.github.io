@@ -31,6 +31,12 @@
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
         }
 
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
         .navbar {
             backdrop-filter: blur(10px);
             background-color: rgba(0, 0, 0, 0.8) !important;
@@ -41,6 +47,7 @@
             background: radial-gradient(circle at top, #1e293b, #0b1220);
             padding: 140px 20px;
             text-align: center;
+            border-bottom: 1px solid #1f2937;
         }
 
         .highlight {
@@ -124,6 +131,7 @@
             border: 1px solid #374151;
             font-weight: 500;
             display: block;
+            color: var(--text-main);
         }
     </style>
 </head>
@@ -244,7 +252,7 @@
 <!-- CTA -->
 <section class="text-center py-5 container my-5">
     <div class="card p-5 bg-gradient">
-        <h2 class="fw-bold">Tu as un projet ?</h2>
+        <h2 class="fw-bold text-white">Tu as un projet ?</h2>
         <p class="text-muted mb-4">Je développe ton application web sur mesure avec Symfony.</p>
 
         <a href="mailto:samy.elkniez@gmail.com" class="btn btn-info btn-lg">
@@ -258,8 +266,8 @@
     <h2 class="section-title">Contact</h2>
 
     <div class="card p-4 text-center">
-        <p class="mb-2">Email : <a href="mailto:samy.elkniez@gmail.com" class="fw-bold">samy.elkniez@gmail.com</a></p>
-        <p class="mb-0">LinkedIn : <a href="https://www.linkedin.com/in/samy-el-kniez-3a7430176/" target="_blank" class="fw-bold">Profil Professionnel</a></p>
+        <p class="mb-2 text-white">Email : <a href="mailto:samy.elkniez@gmail.com" class="fw-bold">samy.elkniez@gmail.com</a></p>
+        <p class="mb-0 text-white">LinkedIn : <a href="https://www.linkedin.com/in/samy-el-kniez-3a7430176/" target="_blank" class="fw-bold">Profil Professionnel</a></p>
     </div>
 </section>
 
